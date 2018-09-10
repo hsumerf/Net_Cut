@@ -1,6 +1,7 @@
-#this will drop the internet paclets for other machine which is being spoofed by our ARP_Spoofer
-#!usr/bin/env python
+#this will drop the internet packets for other machine which is being spoofed by our ARP_Spoofer
+#command before running this program, "iptables -I FORWARD -j NFQUEUE --queue-num 0"
 
+#!usr/bin/env python
 import netfilterqueue
 
 def process_packet(packet):

@@ -1,4 +1,6 @@
 #this will forward the internet for other machine which is being spoofed by our ARP_Spoofer
+#command before running this program, "iptables -I FORWARD -j NFQUEUE --queue-num 0"
+
 #!usr/bin/env python
 
 import netfilterqueue
