@@ -1,5 +1,6 @@
 #this will forward and show the  packets of local machine
 #command before running this program, "iptables -I INPUT -j NFQUEUE --queue-num 0"
+#command before running this program, "iptables -I OUTPUT -j NFQUEUE --queue-num 0"
 
 #!usr/bin/env python
 import netfilterqueue

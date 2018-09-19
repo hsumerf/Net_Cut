@@ -10,7 +10,7 @@ def process_packet(packet):
     #this will forward the packets
     packet.accept()
 
-queue = netfilterqueue.NetfiltetQueue()
+queue = netfilterqueue.NetfilterQueue()
 # 0 because we specified 0 queue-num in command, "iptables -I FORWARD -j NFQUEUE --queue-num 0"
-queue.bind(0,process_packet)
+queue.bind(0, process_packet)
 queue.run()
